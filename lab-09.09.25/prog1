@@ -1,0 +1,22 @@
+package lab2_19_08_25;
+
+class ClassA {
+       ClassA(){
+    	   System.out.println("Hello I am in Class A");
+       }
+}
+class ClassB extends ClassA{
+	 ClassB(){
+		 System.out.println("Hello I am in Class B");
+	 }
+ }
+ class ClassC extends ClassB{
+	ClassC(){
+		System.out.println("Hello I am in Class C");
+	}
+}
+public class display{
+	public static void main(String[] args) {
+		ClassC obj = new ClassC();
+	}
+}
