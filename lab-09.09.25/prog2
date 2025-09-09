@@ -1,0 +1,52 @@
+package lab2_19_08_25;
+
+
+class A {
+
+	int add(int a, int b) {
+
+		return a+b;
+
+	}
+
+	double add(double a, double b) {
+
+		return a+b;
+
+	}
+
+}
+
+class B extends A{
+
+	void add(String s1, String s2) {
+
+		System.out.println(s1 + s2);
+
+		
+
+	}
+
+}
+
+public class Overloading {
+
+ public static void main(String [] args) {
+
+	 B obj = new B();
+
+	 obj.add("Hemasai","C");
+
+	int sum= obj.add(8, 9);
+
+	System.out.println(sum);
+
+	 double sum1=obj.add(4.0, 2.0);
+
+	 System.out.println(sum1);
+
+	 
+
+ }
+
+}
